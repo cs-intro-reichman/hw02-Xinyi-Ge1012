@@ -3,6 +3,14 @@
  */
 public class Divisors {
 	public static void main (String[] args) {
-		//// Put your code here
+		int x = Integer.parselnt(args[0]);
+                 int i = 1:
+                 While ( i < x ){
+                    x % i = 0;
+                     System.out.println( x );
+                       i++；
+            }
+
 	}
 }
+
