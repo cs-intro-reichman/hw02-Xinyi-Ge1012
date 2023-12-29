@@ -6,10 +6,15 @@ public class Divisors {
 	int x = Integer.parseInt(args[0]);
                  int i = 1;
      
-            while ((x >= i) && (x % i == 0)){
-              System.out.println(i);
-                 i++;
+        while (x >= i){
+             if (x % i == 0){
+               System.out.println(i);
+                  i++;
+          } else {
+                  i++;
+              }
      }
 
 	}
 }
+
