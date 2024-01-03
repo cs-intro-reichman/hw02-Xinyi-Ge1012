@@ -59,7 +59,7 @@ public class OneOfEachStats {
         if (familiesWith2Children > familiesWith3Children ){
             if(familiesWith2Children > familiesWith4orMoreChildren){
 				a = 2;
-				System.out.println("The most common number of children is " + a);
+				System.out.println("The most common number of children is " + a + ".");
 			} else {
 				a = 4 ;
 				System.out.println("The most common number of children is " + a + " or more.");
@@ -67,7 +67,7 @@ public class OneOfEachStats {
 		} else {
 			if(familiesWith3Children > familiesWith4orMoreChildren){
 				a = 3;
-				System.out.println("The most common number of children is " + a);
+				System.out.println("The most common number of children is " + a + ".");
 			} else {
 				a = 4 ;
 				System.out.println("The most common number of children is " + a + " or more.");
