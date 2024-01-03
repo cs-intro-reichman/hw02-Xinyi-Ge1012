@@ -19,18 +19,22 @@ public class OneOfEachStats {
         int familiesWith2Children = 0;
         int familiesWith3Children = 0;
         int familiesWith4orMoreChildren = 0;
+		
+		// Initailizes a random numbers generator with the given seed value
+	     for (int i = 0; i < T; i++){
 		int boy = 0;
 		int girl = 0;
-		// Initailizes a random numbers generator with the given seed value
-		for (int i = 0; i < T; i++){
-          while (boy ==0 || girl==0){
-			double rnd = generator.nextDouble();
-			if ( rnd < 0.5 ){
-              girl++;
-			} else {
-				boy++;
+		do{
+                    double rnd = generator.nextDouble();
+		     if ( rnd < 0.5 ){
+                           girl++;
+		  } else {
+			boy++;
 			}
-		  }
+
+		}
+          while (boy == 0 || girl== 0);
+		
             childrenCount = boy + girl;
             totalChildren += childrenCount;
 
